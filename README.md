@@ -38,11 +38,11 @@ export interface IUser{
 ```
 ### Controllers
 
-Create, Delete, FindAll, FindOne, Update
+CreateUserController, DeleteUserController, FindAllUserController, FindUserController, UpdateUserController
 
 ### Services
 
-Create, Delete, FindAll, FindOne, Update
+CreateUserService, DeleteUserService, FindAllUserService, FindUserService, UpdateUserService
 
 ### Exemplo chamada API
 
