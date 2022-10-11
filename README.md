@@ -9,13 +9,33 @@ database/index.ts
 db: crud_db
 
 ### Entity: User
+```
+@Entity()
+export class Users {
+    @PrimaryGeneratedColumn()
+    id: number
 
-id, name, email, isActive
+    @Column({
+        length: 100,
+    })
+    name: string
 
+    @Column()
+    email: string
+
+    @Column()
+    isActive: boolean
+}
+```
 ### Interface: User
-
-id, name, email, isActive
-
+```
+export interface IUser{
+    id?: number,
+    name: string,
+    email: string,
+    isActive: boolean
+}
+```
 ### Controllers
 
 Create, Delete, FindAll, FindOne, Update
