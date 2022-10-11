@@ -26,34 +26,29 @@ Create, Delete, FindAll, FindOne, Update
 
 ### Exemplo chamada API
 
-Criar usuário
-POST http://localhost:5000/users
-
-body: {
+Criar usuário: POST http://localhost:5000/users
+```
+{
   "name": "aqui vai o nome do usuário",
   "email": "aqui vai o email do usuário",
   "isActive": "aqui vai true ou false"
 }
+```
+Buscar usuário: GET http://localhost:5000/users/1
 
-Buscar usuário
-GET http://localhost:5000/users/1
+Buscar Todos os usuário: GET http://localhost:5000/users
 
-Buscar Todos os usuário
-GET http://localhost:5000/users
+Remover usuário: DELETE: http://localhost:5000/users
 
-Remover usuário
-DELETE: http://localhost:5000/users
-
-Atualizar usuário
-PUT http://localhost:5000/users
-
-body: {
+Atualizar usuário: PUT http://localhost:5000/users
+```
+{
   "id": 1,
   "name": "aqui vai o nome do usuário",
   "email": "aqui vai o email do usuário",
   "isActive": "aqui vai true ou false"
 }
-
+```
 ## Instalar as dependências
 
 npm install
